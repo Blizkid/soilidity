@@ -1,0 +1,59 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "hlleo",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"hello.sol": "hello"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"hello.sol": {
+			"keccak256": "0xf8ee7b2fe81eeb63b18dd958117bbdbf2284176c8e355e3cdf9e1fc979bdccac",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2b5af49964d3b35f739090da334fe0c029add9f74b2d95c5c0bd802262b8fb03",
+				"dweb:/ipfs/QmWAL1m6WTDaB7TRVvdXpXxNPV83QajC1UztwKQLKVLqwe"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,168 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "reason",
+						"type": "string"
+					}
+				],
+				"name": "ExternalCallFailed",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bytes",
+						"name": "lowLevelData",
+						"type": "bytes"
+					}
+				],
+				"name": "LowLevelCallFailed",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "targetContract",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "externalCall",
+				"outputs": [
+					{
+						"internalType": "bytes",
+						"name": "",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "targetContract",
+						"type": "address"
+					},
+					{
+						"internalType": "bytes",
+						"name": "data",
+						"type": "bytes"
+					}
+				],
+				"name": "safeExternalCall",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					},
+					{
+						"internalType": "bytes",
+						"name": "result",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "n",
+						"type": "uint256"
+					}
+				],
+				"name": "sumOddNumbers",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"externalCall(address,bytes)": {
+					"details": "实际执行外部调用的内部函数"
+				},
+				"safeExternalCall(address,bytes)": {
+					"details": "安全调用外部合约的函数，使用try/catch处理异常",
+					"params": {
+						"data": "调用数据",
+						"targetContract": "目标合约地址"
+					},
+					"returns": {
+						"result": "调用结果（如果成功）",
+						"success": "是否调用成功"
+					}
+				},
+				"sumOddNumbers(uint256)": {
+					"details": "计算1到n的所有奇数和",
+					"params": {
+						"n": "上限数字"
+					},
+					"returns": {
+						"_0": "奇数和"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"hello.sol": "OddNumberCalculator"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"hello.sol": {
+			"keccak256": "0x632d211672d92390e5356709d7ada2105ba2fc2bd2ec3c7dd36bdd4ced5ee849",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ca93367b6ea06e1809387d360f091e722a7c6923fddbd006b25b1e7a506c0b8c",
+				"dweb:/ipfs/Qma6weLk88tA9Zwv7U1RpbohvbWyTpXVy96dXCsGTHVcD5"
+			]
+		}
+	},
+	"version": 1
+}
