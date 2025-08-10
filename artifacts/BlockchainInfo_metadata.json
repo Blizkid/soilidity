@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "getBlockInfo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "blockNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "blockTimestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "miner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "gasPrice",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"getBlockInfo()": {
+					"details": "返回当前区块信息",
+					"returns": {
+						"blockNumber": "当前区块号",
+						"blockTimestamp": "当前区块时间戳",
+						"gasPrice": "当前交易的 Gas 价格（单位：wei）",
+						"miner": "矿工地址"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"api.sol": "BlockchainInfo"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"api.sol": {
+			"keccak256": "0xde682054ef68d4d9bd0d976c48c20c0bdba231398b8803bfc45a021d1e1e7818",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d86d3c9338f1050b1c4be5b3034e7f45686096c62badfe792e80223ad96604e5",
+				"dweb:/ipfs/QmTAnbF1gJ1wbVQajkFMpLShmkebGsmmpWcrCAe3tkYmwD"
+			]
+		}
+	},
+	"version": 1
+}
